@@ -229,7 +229,7 @@ TRANSLATIONS_EXTENDED = {
         '$ability-primary$伤害有$Chance|+|30$施加$keyword-blot$。',
 
     '$ability-primary$ coats $Torn$ in an adhesive mixture that increases $+|+|50|%|DMG$ taken from $ability-primary$ for <b>3s</b>.':
-        '$ability-primary$涂覆$Torn$粘液，使其受到$ability-primary$伤害$+|+|50|%$持续<b>3s</b>。',
+        '$ability-primary$涂$Torn$粘液，受$ability-primary$$+|+|50|%|DMG$持续<b>3s</b>。',
 
     '$ability-primary$ has a $Chance|+|50$ to fire a <pos>second time</pos>. $Chance|+|100$ at Full Charge.':
         '$ability-primary$有$Chance|+|50$<pos>二次</pos>发射。满蓄力时$Chance|+|100$。',
@@ -606,13 +606,13 @@ TRANSLATIONS_EXTENDED = {
         '$torn$被杀时掉落$keyword-gold$。所有插画为<b>市场</b>。',
 
     '$Scribes$ grant $keyword-embossed$ to the <neg>first</neg> $Torn$ they <i>dare</i> to damage each Chapter.':
-        '$Scribes$每章节<neg>第一个</neg>攻击的$Torn$获得$keyword-embossed$。',
+        '$Scribes$每章<neg>第一个</neg><i>敢</i>攻击的$Torn$获$keyword-embossed$。',
 
     'Damaging $torn$ <neg>shrinks</neg> $scribe$ spells and projectiles by $-|-|10|%$. (Max <neg>5</neg> stacks)':
         '伤害$torn$时$scribe$技能和弹射物<neg>缩小</neg>$-|-|10|%$。(最多<neg>5</neg>层)',
 
     'The <b>second</b> $torn$ <b>Page</b> choice is always <neg>hidden</neg>.':
-        '第二个$torn$<b>页面</b>选择总是<neg>隐藏</neg>的。',
+        '<b>第二</b>个$torn$<b>页面</b>选择总是<neg>隐藏</neg>的。',
 
     # ================================================================
     #  圣泉（Font）能力
@@ -769,7 +769,7 @@ TRANSLATIONS_EXTENDED = {
         '被你伤害的$Torn$每秒受到<b>当前生命</b>$+|2|%$伤害持续<b>5s</b>。',
 
     'Increased $ability-primary$ values by <b>1</b> each stack, resetting when a <pos>20</pos> is rolled.':
-        '每层$ability-primary$数值$+$<b>1</b>，骰出<pos>20</pos>时重置。',
+        '每层$ability-primary$数值+<b>1</b>，骰出<pos>20</pos>时重置。',
 
     'Each $ability-primary$ <b>anchor</b> increases the <pos>size</pos> and <pos>damage</pos> of your next $ability-secondary$ by $+|3|%$.':
         '$ability-primary$每个<b>锚点</b>使下次$ability-secondary$<pos>体积</pos>和<pos>伤害</pos>$+|3|%$。',
@@ -870,7 +870,7 @@ TRANSLATIONS_EXTENDED = {
     #  Boss选择界面 — 大母鸡比格 机制描述
     # ================================================================
     "Kill the boss... a lot":
-        '击杀BOSS…反复击杀',
+        '反复击杀BOSS…',
 
     "<b>Bigol'Hen</b> will summon two different <neg>walls of orbs</neg> that slowly \nmove across the arena.\n\n<b>Move through orbs of the color that matches yours</b> \nto <pos>destroy them.</pos>\n\nLet allies of the opposite color destroy those orbs to get safely through.":
         "<b>大母鸡</b>会召唤两面不同的<neg>球墙</neg>\n缓慢横穿场地。\n\n<b>穿过与你颜色匹配的球</b>\n来<pos>消灭它们。</pos>\n\n让相反颜色的队友消灭那些球安全通过。",
@@ -894,7 +894,7 @@ TRANSLATIONS_EXTENDED = {
         '守护者活着时无法伤害Araxiom！',
 
     "<b>Araxiom's</b> den is populated by dormant <b>Broodling Eggs</b>. Periodically, <b>Araxiom</b> scatters fresh <b>Broodling Eggs</b> across the arena.":
-        "<b>阿拉希奥姆</b>的巢穴中散布着休眠的<b>虫卵</b>。她会定期在场地中撒下新<b>虫卵</b>。",
+        "<b>阿拉希奥姆</b>的巢穴中散布休眠<b>虫卵</b>。<b>阿拉希奥姆</b>会定期撒下新<b>虫卵</b>。",
 
     'An extra Guardian and pair of Bursting Eggs appear.':
         '额外出现一个守护者和一对爆裂虫卵。',
@@ -967,9 +967,6 @@ TRANSLATIONS_EXTENDED = {
 
     "Stop their Aura Farming...":
         '阻止他们刷光环…',
-
-    "Kill the boss... a lot":
-        '反复击杀BOSS',
 
     'Araxiom, Legionweaver Stirs':
         'Araxiom织网者苏醒',
