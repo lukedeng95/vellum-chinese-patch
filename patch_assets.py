@@ -226,36 +226,35 @@ def patch_assets(game_path):
         # Unity 字符串格式: [4字节长度前缀][UTF-8内容][对齐填充]
         # 只在长度前缀匹配的位置替换，避免误替换元数据导致崩溃
         search_start = 0
-        pos = -1
+        replaced_count = 0
         while True:
-            candidate = data.find(eng_bytes, search_start)
-            if candidate == -1:
+            pos = data.find(eng_bytes, search_start)
+            if pos == -1:
                 break
+            
             # 验证：前4字节应该是字符串长度
-            if candidate >= 4:
+            if pos >= 4:
                 import struct
-                length_prefix = struct.unpack('<I', data[candidate-4:candidate])[0]
+                length_prefix = struct.unpack('<I', data[pos-4:pos])[0]
                 if length_prefix == len(eng_bytes):
-                    pos = candidate
-                    break
-            # 前缀不匹配，继续搜索下一个位置
-            search_start = candidate + 1
+                    # 匹配成功，执行替换
+                    padding_len = len(eng_bytes) - len(chn_bytes)
+                    replacement = chn_bytes + b"\x00" * padding_len
+                    data[pos:pos + len(eng_bytes)] = replacement
+                    replaced_count += 1
+            
+            # 继续向后搜索
+            search_start = pos + len(eng_bytes)
 
-        if pos == -1:
+        if replaced_count == 0:
             print(f"  [未找到] {eng_text[:50]}...")
             skipped_notfound += 1
             continue
 
-        # 不修改长度前缀！修改会导致 Unity 反序列化偏移错位，游戏黑屏。
-        # 保持原始长度，用空字节填充剩余部分。
-        padding_len = len(eng_bytes) - len(chn_bytes)
-        replacement = chn_bytes + b"\x00" * padding_len
-        data[pos:pos + len(eng_bytes)] = replacement
-
-        patched += 1
+        patched += replaced_count
         short_eng = eng_text[:40].replace("\n", "\\n")
         short_chn = chn_text[:30].replace("\n", "\\n")
-        print(f"  [OK] {short_eng}... => {short_chn}...")
+        print(f"  [OK] 替换了 {replaced_count} 处: {short_eng}... => {short_chn}...")
 
     # 写回文件
     print(f"\n[写入] 保存修改后的 resources.assets...")
