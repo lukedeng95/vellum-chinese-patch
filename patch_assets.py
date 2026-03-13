@@ -182,11 +182,12 @@ def patch_assets(game_path):
         print(f"[备份] 创建备份: {backup_path}")
         shutil.copy2(assets_path, backup_path)
     else:
-        print(f"[备份] 备份已存在，跳过")
+        print(f"[备份] 备份已存在，从备份读取原始文件")
 
-    # 读取整个文件
-    print(f"[读取] 加载 resources.assets ({os.path.getsize(assets_path) / 1024 / 1024:.1f} MB)...")
-    with open(assets_path, "rb") as f:
+    # 始终从备份（原始文件）读取，确保每次都能完整打补丁
+    source_path = backup_path if os.path.isfile(backup_path) else assets_path
+    print(f"[读取] 加载 {os.path.basename(source_path)} ({os.path.getsize(source_path) / 1024 / 1024:.1f} MB)...")
+    with open(source_path, "rb") as f:
         data = bytearray(f.read())
 
     patched = 0

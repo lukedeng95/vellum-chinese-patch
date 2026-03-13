@@ -799,4 +799,427 @@ TRANSLATIONS_EXTENDED = {
 
     '$ability-signature$ summons a <pos>shield</pos>, making you $keyword-impervious$ and knocking away foes. ($+|25|DMG$)':
         '$ability-signature$召唤<pos>盾</pos>，使你$keyword-impervious$并击退敌人。($+|25|DMG$)',
+
+    # ================================================================
+    #  Boss选择界面 — H1 元首阿福扎恩 机制描述
+    # ================================================================
+    "Don't get overwhelmed with adds!":
+        '别被小怪淹没！',
+
+    '<b>General Aversion</b> will play a game of tic tac toe. \nClear Adds so that there are <neg>never 3 in a row.</neg>':
+        '<b>元首</b>将进行九宫格连线。\n清理小怪，<neg>绝不能三连。</neg>',
+
+    '<b>General Aversion</b> and the <b>Portals</b> will summon AoEs that \n<neg>detonate</neg> after a brief delay.\n\n<i>AoE means Area of Effect. These attacks will cover an area \ninstead of just focusing on an individual.</i>':
+        '<b>元首</b>和<b>传送门</b>会召唤\n短暂延迟后<neg>引爆</neg>的AoE。\n\n<i>AoE即范围攻击。这些攻击会覆盖一片区域\n而非只针对个体。</i>',
+
+    'Watch your feet!':
+        '小心脚下！',
+
+    # ================================================================
+    #  Boss选择界面 — H2 弗拉希乌斯 机制描述
+    # ================================================================
+    '<b>The Volorax</b> summons a set of expanding ring AoEs near the \ntank that <neg>detonate</neg> after a delay.\n\n<i>Stand on the edge of one ring</i> and wait for it to detonate. Then <b>immediately move forward</b> to avoid the next one. ':
+        '<b>弗拉希乌斯</b>在坦克附近召唤扩散环形AoE，\n延迟后<neg>引爆</neg>。\n\n<i>站在环的边缘</i>等它爆炸。然后<b>立刻向前走</b>躲避下一个。',
+
+    '<b>The Volorax</b> summons two walls that section the arena. Stay in the <b>center</b> of the map!':
+        '<b>弗拉希乌斯</b>召唤两面墙分割场地。待在地图<b>中心</b>！',
+
+    # ================================================================
+    #  Boss选择界面 — H3 萨哈达尔 机制描述
+    # ================================================================
+    'Dodge and avoid hitting your team!':
+        '躲避，别打到队友！',
+
+    '<b>Sal</b> will occasionally target you to drop a pool.\n\nMove to edge of the arena so the pool is not in your way.':
+        '<b>萨尔</b>会不时选你放置水池。\n\n移到场地边缘使水池不挡路。',
+
+    # ================================================================
+    #  Boss选择界面 — H4 双龙 机制描述
+    # ================================================================
+    'The twin red dragons, <b>Prequel</b> and <b>Sequel</b>, have maintained their ability to put on a dazzlingly dangerous two-drake show - despite the corrupting influence of their new management. \n\nWhile a few glimpses of their original act remain, the grand finale would overshadow all. ':
+        '这对红色双龙，<b>前传</b>与<b>续集</b>，依然能上演令人目眩的危险双龙秀——尽管受到新管理者的堕落影响。\n\n虽然原有演出的痕迹犹存，但压轴大戏将盖过一切。',
+
+    'Keep your allies safe when you get targeted by abilities!':
+        '被技能瞄准时保护好队友！',
+
+    'Soak to shrink the deathball!':
+        '分摊以缩小死亡球！',
+
+    'When they fly, stay safe and survive the adds!':
+        '飞行阶段，注意安全并清小怪！',
+
+    "<b>Prequel</b> will target you with a breath attack.\n\n<pos>Aim</pos> the breath so it doesn't hit your DPS or Healers!":
+        '<b>前传</b>会用吐息攻击你。\n\n<pos>引导</pos>吐息避开输出和治疗！',
+
+    '<b>Prequel</b> will tether you to an energy ball, damaging you over time.\n\n<pos>Get far away</pos> to break the tether!':
+        '<b>前传</b>会用能量球连接你，持续造成伤害。\n\n<pos>远离</pos>以拉断连接！',
+
+    "During intermission, if you're targeted with an AoE, move to the edge and avoid hitting your teammates with it.":
+        '转场期间如果你被AoE瞄准，移到边缘，别打到队友。',
+
+    # ================================================================
+    #  Boss选择界面 — H5 光盲先锋军 机制描述
+    # ================================================================
+    '<b>The Light-Enthused Fanbase</b> were once normal followers of the light - engaging appropriately with the altruistic tenets of hope, justice, and kindness. The trio, however, have fallen into extreme zealousness. \n\nFew can withstand the over-familiar auras of <b>Vain Verus</b>, <b>Para-social Svenn</b>, and <b>Awkward Andy</b>.':
+        '<b>光盲先锋军</b>曾是正常的圣光追随者——恪守希望、正义与仁慈的教义。然而这三人已坠入极端狂热。\n\n鲜有人能抵挡<b>维纳尔</b>、<b>瑟恩</b>和<b>贝莱梅</b>过分亲密的光环。',
+
+    'Dodge, duck, dip, dive, and interrupt':
+        '闪、蹲、侧、俯冲并打断',
+
+    # ================================================================
+    #  Boss选择界面 — 大母鸡比格 机制描述
+    # ================================================================
+    "Kill the boss... a lot":
+        '击杀BOSS…反复击杀',
+
+    "<b>Bigol'Hen</b> will summon two different <neg>walls of orbs</neg> that slowly \nmove across the arena.\n\n<b>Move through orbs of the color that matches yours</b> \nto <pos>destroy them.</pos>\n\nLet allies of the opposite color destroy those orbs to get safely through.":
+        "<b>大母鸡</b>会召唤两面不同的<neg>球墙</neg>\n缓慢横穿场地。\n\n<b>穿过与你颜色匹配的球</b>\n来<pos>消灭它们。</pos>\n\n让相反颜色的队友消灭那些球安全通过。",
+
+    "<b>Bigol'Hen</b> will summon Quills that fire at players. \n\nIf targeted, <pos>hide behind</pos> a player of the <i>opposite color</i> to <b>absorb the quill.</b>\n\nIf an ally is targeted by a quill <i>matching your color</i>, <b>stand in its way</b> to <pos>protect your friend.</pos>":
+        "<b>大母鸡</b>会召唤飞羽射向玩家。\n\n被瞄准时，<pos>躲到</pos><i>反色</i>玩家身后<b>吸收飞羽。</b>\n\n若队友被<i>与你同色</i>的飞羽瞄准，<b>挡在前面</b><pos>保护队友。</pos>",
+
+    "<b>Bigol'Hen</b>'s egg will summon conal AoEs. Stand in the cones that <i>match your color</i> to avoid damage.":
+        "<b>大母鸡</b>的蛋会召唤锥形AoE。站在<i>与你颜色匹配</i>的锥形区域中免伤。",
+
+    # ================================================================
+    #  Boss选择界面 — 阿拉希奥姆 机制描述
+    # ================================================================
+    'No longer itsy-bitsy, <b>Araxiom</b> communicates with her fellow Torn via complex, large patterning of decaying plot threads.':
+        '不再是小蜘蛛了，<b>阿拉希奥姆</b>通过复杂的大型衰败故事线与撕裂者同伴交流。',
+
+    'Try to apply <pos>Lanterns</pos> generously!':
+        '尽量多使用<pos>灯笼</pos>！',
+
+    'Araxiom cannot be harmed while Guardians live!':
+        '守护者活着时无法伤害Araxiom！',
+
+    "<b>Araxiom's</b> den is populated by dormant <b>Broodling Eggs</b>. Periodically, <b>Araxiom</b> scatters fresh <b>Broodling Eggs</b> across the arena.":
+        "<b>阿拉希奥姆</b>的巢穴中散布着休眠的<b>虫卵</b>。她会定期在场地中撒下新<b>虫卵</b>。",
+
+    'An extra Guardian and pair of Bursting Eggs appear.':
+        '额外出现一个守护者和一对爆裂虫卵。',
+
+    '<b>Araxiom</b> shrieks, knocking away Scribes and dropping a <pos>Fiery Lantern</pos> from above, capable of waking Eggs <pos>early</pos> and <pos>half health</pos>.':
+        '<b>阿拉希奥姆</b>尖啸击退书记官，从上方掉落<pos>火焰灯笼</pos>，可<pos>提前</pos>唤醒虫卵且<pos>半血</pos>。',
+
+    '<b>Araxiom</b>  awakens any remaining Eggs in her den. <b>Broodlings</b> hatched in this way are <neg>Empowered</neg>.':
+        '<b>阿拉希奥姆</b>唤醒巢中所有剩余虫卵。如此孵化的<b>幼虫</b>会被<neg>强化</neg>。',
+
+    '<b>Araxiom</b> scours the ground with webbed blades, erupting a line \nof spikes at her target.':
+        '<b>阿拉希奥姆</b>用蛛网利刃扫地，向目标\n喷射一排尖刺。',
+
+    'A second pair of angled fissures appears after a short delay.':
+        '短暂延迟后出现第二对斜向裂缝。',
+
+    '<b>Araxiom</b> roars, crumbling the ceiling and causing rockfall around Scribes.':
+        '<b>Araxiom</b>咆哮，震碎天花板，在书记官周围落石。',
+
+    '<b>Araxiom</b> hungrily leaps toward her target.':
+        '<b>阿拉希奥姆</b>饥饿地扑向目标。',
+
+    'Leap also creates a damaging Quake \nwhere Araxiom lands.':
+        '飞扑还会在落点\n制造伤害性地震。',
+
+    '<b>Araxiom</b> rampages, continuously raining debris down from above around all Scribes.':
+        '<b>阿拉希奥姆</b>暴走，持续从上方在所有书记官周围降下碎石。',
+
+    'Getting hit by debris slows Scribes for 2s.':
+        '被碎石击中会减速书记官2s。',
+
+    'Broodling (Bombardier)':
+        '幼虫（轰炸者）',
+
+    'A large <b>Broodling</b>, the Bombardier constantly attacks Scribes \nfrom afar.':
+        '大型<b>幼虫</b>，轰炸者会持续\n远程攻击书记官。',
+
+    'Bombardiers are <neg>immune</neg> to damage until \nhit by Araxiom\'s Fissure.':
+        '轰炸者对伤害<neg>免疫</neg>\n直到被Araxiom裂缝击中。',
+
+    'Broodling (Guardian)':
+        '幼虫(守护者)',
+
+    'A medium-sized <b>Broodling</b>, the Guardian continuously <neg>protects</neg> <b>Araxiom</b>.':
+        '中型<b>幼虫</b>，守护者持续<neg>保护</neg><b>阿拉希奥姆</b>。',
+
+    'Broodling (Burstling)':
+        '幼虫（爆裂者）',
+
+    'A small <b>Broodling</b>, the Burstling swiftly sacrifices itself in a <b>ghastly explosion</b>.':
+        '小型<b>幼虫</b>，爆裂者迅速自爆产生<b>恐怖爆炸</b>。',
+
+    'Awaken, Legions!':
+        '醒来!军团!',
+
+    'The Dormant Brood':
+        '休眠的虫族',
+
+    # ================================================================
+    #  Boss语录/风味文字
+    # ================================================================
+    "He'll eat the whole Salad Bar!":
+        '他要吃掉整个沙拉吧！',
+
+    'He sweeps with such Ease!':
+        '扫荡如此轻松！',
+
+    'Beware the middle overlaps!':
+        '小心中间的重叠！',
+
+    "Stop their Aura Farming...":
+        '阻止他们刷光环…',
+
+    "Kill the boss... a lot":
+        '反复击杀BOSS',
+
+    'Araxiom, Legionweaver Stirs':
+        'Araxiom织网者苏醒',
+
+    'In The Metaphorest':
+        '在隐喻森林中',
+
+    'Baffling Darkness Grows...':
+        '困惑黑暗蔓延…',
+
+    'Umbral Courtyard':
+        '暗影庭院',
+
+    'On Branching Paths':
+        '在分岔路上',
+
+    "At The Raving Lord's Invitation":
+        '应狂言之主的邀请',
+
+    'The Proverbial Quarry':
+        '谚语采石场',
+
+    'The Binding Workshop':
+        '装订工坊',
+
+    'With Dark Purpose':
+        '黑暗目的',
+
+    'The Machines Rumble':
+        '机器隆隆作响',
+
+    'Charting the Throughline':
+        '描绘主线',
+
+    'On The Throughline':
+        '在主线上',
+
+    'The Facade Strengthens':
+        '幻象加固',
+
+    'The Grand Forgery':
+        '伟大的赝品',
+
+    'The Splice Lord Refines His Duty':
+        '接合之主精炼职责',
+
+    'Chronomalus, Darkest Hour':
+        '时空兽，至暗时刻',
+
+    'In the Fullness of Time...':
+        '在时间的尽头…',
+
+    'Perplexicon, The Sealed Archive':
+        '困惑典籍，封印档案馆',
+
+    'The Sealed Archive':
+        '封印档案馆',
+
+    'Under Lock and Key...':
+        '重重锁闭…',
+
+    'The Brainstorm, Plotting a Course':
+        '脑暴，谋划路线',
+
+    'Weathering the Plot':
+        '经受故事考验',
+
+    'Amidst The Brainstorm':
+        '脑暴之中',
+
+    'Rocky Shores, Seas of Tumult':
+        '岩岸，翻涌之海',
+
+    'Horizon, The Tangent Lord':
+        '地平线，离题之主',
+
+    'Last Work of a Studious Pupil':
+        '勤学弟子的遗作',
+
+    'Intermission AoE':
+        '转场AoE',
+
+    # ================================================================
+    #  战斗中提示（带富文本标签）— 二进制补丁
+    # ================================================================
+    '<pos>Kill the Manifestation</pos> to prevent <neg>extra damage</neg>...':
+        '<pos>击杀具象</pos>以避免<neg>额外伤害</neg>…',
+
+    "Get to the <pos>center</pos>...\nIt's <b>intermission</b> time!":
+        '去<pos>中心</pos>…\n<b>转场</b>时间！',
+
+    'Standing in an <b>Essence Pool</b> and taking <neg>increasing damage</neg>!':
+        '站在<b>精华池</b>中承受<neg>递增伤害</neg>！',
+
+    '<pos>The Tank</pos> will be playing <b>Tic-Tac-Toe</b> with the <neg>Boss.</neg>':
+        '<pos>坦克</pos>将和<neg>首领</neg>下<b>九宫格</b>。',
+
+    "If the boss gets <b>3 in a row</b>, it's a <neg>Wipe!</neg>":
+        '首领<b>三连线</b>就<neg>灭团！</neg>',
+
+    '<pos>Kill</pos> the <neg>Manifestations</neg> before they reach the <neg>Boss!</neg>':
+        '在<neg>具象</neg>到达<neg>首领</neg>前<pos>击杀</pos>它们！',
+
+    'Kill the Dragons <pos>evenly!</pos> They <neg>don\'t</neg> share health.':
+        '平衡击杀双龙<pos>！</pos>它们<neg>不</neg>共享血量。',
+
+    '<pos>Stay on your color</pos> and hit the egg - now we just game!':
+        '<pos>待在你的颜色</pos>上打蛋——开战！',
+
+    'Destroy the Obelisks':
+        '摧毁方尖碑',
+
+    'You can open <b>eggs</b> <pos>prematurely</pos>, sapping them of strength.':
+        '你可以<pos>提前</pos>打开<b>蛋</b>，削弱它们。',
+
+    'Destroy the Lava Furnace!':
+        '摧毁熔岩炉！',
+
+    '<pos>Kill</pos> the <neg>Adds</neg> before they reach the <neg>Boss!</neg>':
+        '在<neg>小怪</neg>到达<neg>首领</neg>前<pos>击杀</pos>！',
+
+    '<neg>DON\'T SOAK!</neg> \n\n<b>On Heroic</b> you have to <i>alternate soaks</i>.':
+        '<neg>别分摊！</neg>\n\n<b>英雄难度</b>需要<i>交替分摊</i>。',
+
+    '<pos>SOAK</pos> with the <sprite name="sym_bar">Tank to get phased!':
+        '<pos>分摊</pos><sprite name="sym_bar">坦克的圈进入内场！',
+
+    '<pos>Destroy the Orb</pos> before it <neg>reaches</neg> the boss!':
+        '<pos>摧毁宝珠</pos>在它<neg>到达</neg>首领之前！',
+
+    '<pos>SOAK</pos> on <sprite name="sym_bar">Tank to clear a space!':
+        '<pos>分摊</pos><sprite name="sym_bar">坦克位清格子！',
+
+    '<pos>Soak</pos> the <neg>Hammer</neg>, then <pos>dodge</pos> the spinning projectiles!':
+        '<pos>分摊</pos><neg>圣锤</neg>，然后<pos>躲</pos>旋转飞盾！',
+
+    '<neg>Run away</neg> to <pos>break</pos> the tether!':
+        '<neg>跑开</neg>来<pos>拉断</pos>连接！',
+
+    'Kill the <b>egg</b> before the bird <neg>respawns</neg>!':
+        '在鸟<neg>重生</neg>前击杀<b>蛋</b>！',
+
+    '<b>Get to</b> the <pos>Safe Spot!</pos>':
+        '<b>去</b><pos>安全区！</pos>',
+
+    'Stay out of the <neg>Charge Path</neg>!':
+        '远离<neg>冲锋路径</neg>！',
+
+    'Play Tic-Tac-Toe with the boss!\nHere is some more info!':
+        '和首领下九宫格！\n更多详细信息！',
+
+    'Break the <neg>Shield</neg> before the cast completes!':
+        '在施法完成前打破<neg>护盾</neg>！',
+
+    'An <neg>Orb</neg> will fire soon! Get ready to <pos>SOAK</pos> it.':
+        '<neg>宝珠</neg>即将发射！准备<pos>分摊</pos>。',
+
+    'Get to the edge of the safe zone to avoid allies!':
+        '去安全区边缘以避开队友！',
+
+    # ================================================================
+    #  Horizon 机制描述（离题之主）
+    # ================================================================
+    '<b>Horizon</b> launches 3 <neg>concoctions</neg> toward his target, and another at a random Scribe, which bounce once before exploding.':
+        '<b>地平线</b>向目标发射3个<neg>药剂</neg>，另一个射向随机书记官，弹跳一次后爆炸。',
+
+    'Explosions release 3 <neg>Dice</neg> in random directions.':
+        '爆炸向随机方向释放3个<neg>骰子</neg>。',
+
+    '<b>Horizon</b> buckles the ground, unfolding a <neg>randomly-arcing</neg> \nline toward the targeted $scribe$, which erupts after <b>0.66s</b>.':
+        '<b>地平线</b>震裂地面，向目标$scribe$展开<neg>随机弧形</neg>\n裂纹，<b>0.66s</b>后喷发。',
+
+    'An additional crease line is released.':
+        '释放额外一条裂纹。',
+
+    'Semiotic Deconstruction':
+        '符号解构',
+
+    '<b>Horizon</b> will periodically activate <b>eyes</b> around him, bringing \n<neg>new destructive power</neg> to bear.':
+        '<b>地平线</b>会定期激活周围的<b>眼</b>，\n释放<neg>新的破坏力</neg>。',
+
+    'The <b>Bubbling Eye</b> will periodically throw <neg>Concoctions</neg> at \nrandom $scribe$.':
+        '<b>沸腾之眼</b>会定期向\n随机$scribe$投掷<neg>药剂</neg>。',
+
+    'The <b>Shifting Eye</b> will periodically form <neg>Creases</neg> at random $scribes$.':
+        '<b>移形之眼</b>会定期在随机$scribes$处形成<neg>裂纹</neg>。',
+
+    'The <b>Lucky Eye</b> will periodically roll <neg>Clatters</neg> at random points in the arena, which will release <b>Dice</b> based on the rolled value.':
+        '<b>幸运之眼</b>会定期向场地随机点投<neg>骰响</neg>，根据骰值释放<b>骰子</b>。',
+
+    'The <b>Discoidal Eye</b> will periodically discharge <b>energetic \npulsations</b> that <neg>expand</neg> through the entire arena.':
+        '<b>碟形之眼</b>会定期释放<b>能量\n脉冲</b>，<neg>扩散</neg>至整个场地。',
+
+    'The ring expands faster, then <neg>returns</neg>.':
+        '环扩散更快，然后<neg>回收</neg>。',
+
+    'The <b>Celestial Eye</b> will occasionally warp in new dark <neg>Eclipses</neg> \nto rain chaos over the arena.':
+        '<b>天界之眼</b>会不时召唤黑暗<neg>日蚀</neg>\n在场地中降下混沌。',
+
+    # ================================================================
+    #  额外游戏文本
+    # ================================================================
+    '$ability-movement$ leaves behind an $keyword-pool$.':
+        '$ability-movement$留下$keyword-pool$。',
+
+    '$ability-secondary$ leaves behind an <pos>Imprint</pos> that grants $Scribes$ $+|1$ $mana-neutral$ and reduces their $ability-utility$ cooldowns by $+|1|s$ each second for <b>4s</b>.':
+        '$ability-secondary$留下<pos>印记</pos>，每秒给予$Scribes$$+|1$$mana-neutral$并减少$ability-utility$冷却$+|1|s$，持续<b>4s</b>。',
+
+    '$ability-movement$ leaves behind an area that launches $Scribes$ into the air.':
+        '$ability-movement$留下一个将$Scribes$弹射到空中的区域。',
+
+    'Tower and Underground Area of Effect attacks <neg>deal increasing damage</neg>.':
+        '塔和地下范围攻击<neg>造成递增伤害</neg>。',
+
+    "<b>Styxen</b>'s Shield Bash leaves behind a <neg>molten trail.</neg>":
+        '<b>斯提克森</b>的盾击留下<neg>熔岩轨迹。</neg>',
+
+    "<b>Myriad's Swoop</b> leaves behind <neg>flaming feathers</neg>.":
+        '<b>万象俯冲</b>留下<neg>燃烧羽毛</neg>。',
+
+    'Overgrown Towers whose Chains hold up the <b>The Taking Tree</b>.':
+        '高耸之塔，锁链撑起<b>攫取之树</b>。',
+
+    'Swipe leaves behind a fiery patch.':
+        '横扫留下一片火焰。',
+
+    '<b>Crombul</b> becomes overwhelmed with fury, gaining enhanced Damage, Size, and Speed.':
+        '<b>克隆布尔</b>被狂怒吞没，获得增强的伤害、体型和速度。',
+
+    '<b>Lingering Blast</b> travels faster, <neg>seeks</neg> Scribes, and leaves behind a slowing area when expiring.':
+        '<b>余爆</b>飞行更快，<neg>追踪</neg>书记官，消失时留下减速区域。',
+
+    'After $ability-utility$ expires, your $keyword-inkling$ leaves behind a healing area for <b>3s</b>. ($+|30|HP$)':
+        '$ability-utility$结束后，$keyword-inkling$留下治疗区域<b>3s</b>。($+|30|HP$)',
+
+    # ================================================================
+    #  Horizon 额外技能描述
+    # ================================================================
+    '<b>Horizon</b> <neg>tears away</neg> the $mana-neutral$ of all $scribes$. The $mana-neutral$ can be <pos>collected</pos> from the ground.':
+        '<b>地平线</b><neg>夺走</neg>所有$scribes$的$mana-neutral$。$mana-neutral$可从地面<pos>拾取</pos>。',
+
+    'After a short delay, <b>Horizon</b> <neg>annihilates</neg> all $scribes$ within \na narrow view in front of him.':
+        '短暂延迟后，<b>地平线</b><neg>湮灭</neg>前方\n狭窄视野内的所有$scribes$。',
+
+    'The field of view is increased by $-|10| degrees$.':
+        '视野范围增加$-|10| degrees$。',
+
+    '<b>Horizon</b> charges up a massive, destructive beam that <neg>follows</neg> his target for <b>1.5s</b>.':
+        '<b>地平线</b>蓄力一道巨大破坏光束，<neg>跟踪</neg>目标<b>1.5s</b>。',
+
+    'Planets releas a <neg>destructive beam</neg> straight down.':
+        '行星向下释放<neg>毁灭光束</neg>。',
 }

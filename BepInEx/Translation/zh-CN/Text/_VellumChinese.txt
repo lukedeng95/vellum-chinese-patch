@@ -815,3 +815,201 @@ Damage Taken=受到伤害
 Healing Done=治疗量
 Deaths=死亡次数
 Kills=击杀数
+
+#==============================================
+#  Boss选择界面 — 机制描述（运行时文本）
+#==============================================
+# H1
+Don't get overwhelmed with adds!=别被小怪淹没！
+Watch your feet!=小心脚下！
+
+# H2
+Rings=环形冲击
+Walls=水晶墙
+Bursters=爆爬虫
+Beam=射线
+
+# H3
+Dodge and avoid hitting your team!=躲避，别打到队友！
+
+# H4
+Keep your allies safe when you get targeted by abilities!=被技能瞄准时保护好队友！
+Soak to shrink the deathball!=分摊以缩小死亡球！
+When they fly, stay safe and survive the adds!=飞行阶段，注意安全并清小怪！
+Intermission AoE=转场AoE
+
+# H5
+Dodge, duck, dip, dive, and interrupt=闪、蹲、侧、俯冲并打断
+
+# 大母鸡
+Kill the boss... a lot=反复击杀BOSS
+
+# 阿拉希奥姆
+Try to apply Lanterns generously!=尽量多使用灯笼！
+Araxiom cannot be harmed while Guardians live!=守护者活着时无法伤害Araxiom！
+The Dormant Brood=休眠的虫族
+Awaken, Legions!=醒来!军团!
+Broodling (Bombardier)=幼虫（轰炸者）
+Broodling (Guardian)=幼虫(守护者)
+Broodling (Burstling)=幼虫（爆裂者）
+Bombardier=轰炸者
+Burstling=爆裂者
+
+#==============================================
+#  战斗中提示（运行时文本）
+#==============================================
+Destroy the Orb=摧毁宝珠
+Destroy the Orb before it reaches the boss!=在宝珠到达首领前摧毁它！
+Destroy the Obelisks=摧毁方尖碑
+Destroy the Lava Furnace!=摧毁熔岩炉！
+Kill the Manifestation to prevent extra damage...=击杀具象以避免额外伤害…
+Kill the Manifestations before they reach the Boss!=在具象到达BOSS前击杀它们！
+Kill the Adds before they reach the Boss!=在小怪到达BOSS前击杀它们！
+Kill the Dragons evenly!=平衡击杀双龙！
+Kill the egg before the bird respawns!=在鸟重生前击杀蛋！
+The Tank will be playing Tic-Tac-Toe with the Boss.=坦克将和首领下九宫格。
+If the boss gets 3 in a row, it's a Wipe!=首领三连线就灭团！
+Play Tic-Tac-Toe with the boss!=和首领下九宫格！
+Break the Chains atop the Towers=打破塔顶的锁链
+Break the Shield before the cast completes!=在施法完成前打破护盾！
+Get to the Safe Spot!=去安全区！
+Stay out of the Charge Path!=远离冲锋路径！
+Stay on your color and hit the egg - now we just game!=待在你的颜色上打蛋——开战！
+Soak the Hammer, then dodge the spinning projectiles!=分摊圣锤，然后躲旋转飞盾！
+Run away to break the tether!=跑开来拉断连接！
+An Orb will fire soon! Get ready to SOAK it.=宝珠即将发射！准备分摊。
+DON'T SOAK!=别分摊！
+On Heroic you have to alternate soaks=英雄难度需要交替分摊
+alternate soaks=交替分摊
+SOAK with the Tank to get phased!=分摊坦克的圈进入内场！
+SOAK on Tank to clear a space!=在坦克位分摊清格子！
+Get to the center=去中心
+It's intermission time!=转场时间！
+Get to the edge of the safe zone to avoid allies!=去安全区边缘以避开队友！
+Standing in an Essence Pool and taking increasing damage!=站在精华池中承受递增伤害！
+
+# 龙 — 吐息/连接
+Aim the breath so it doesn't hit your DPS or Healers!=引导吐息避开输出和治疗！
+Get far away to break the tether!=远离以拉断连接！
+During intermission, if you're targeted with an AoE, move to the edge and avoid hitting your teammates with it.=转场期间如果被AoE瞄准，移到边缘别打到队友。
+
+# 大母鸡
+You can open eggs prematurely, sapping them of strength.=你可以提前打开蛋，削弱它们。
+
+#==============================================
+#  Boss语录 & 区域名称
+#==============================================
+He'll eat the whole Salad Bar!=他要吃掉整个沙拉吧！
+The Tic-Tac-Toe Terror!=九宫格恐怖！
+He sweeps with such Ease!=扫荡如此轻松！
+Beware the middle overlaps!=小心中间的重叠！
+Stop their Aura Farming...=阻止他们刷光环…
+With 11 Verbs and Vices=11种动词与恶习
+Araxiom, Legionweaver Stirs=Araxiom织网者苏醒
+In The Metaphorest=在隐喻森林中
+Baffling Darkness Grows...=困惑黑暗蔓延…
+Umbral Courtyard=暗影庭院
+On Branching Paths=在分岔路上
+At The Raving Lord's Invitation=应狂言之主的邀请
+The Proverbial Quarry=谚语采石场
+The Binding Workshop=装订工坊
+With Dark Purpose=黑暗目的
+The Machines Rumble=机器隆隆作响
+Charting the Throughline=描绘主线
+On The Throughline=在主线上
+The Facade Strengthens=幻象加固
+The Grand Forgery=伟大的赝品
+The Splice Lord Refines His Duty=接合之主精炼职责
+Chronomalus, Darkest Hour=时空兽，至暗时刻
+In the Fullness of Time...=在时间的尽头…
+Perplexicon, The Sealed Archive=困惑典籍，封印档案馆
+The Sealed Archive=封印档案馆
+Under Lock and Key...=重重锁闭…
+The Brainstorm, Plotting a Course=脑暴，谋划路线
+Weathering the Plot=经受故事考验
+Amidst The Brainstorm=脑暴之中
+Rocky Shores, Seas of Tumult=岩岸，翻涌之海
+Horizon, The Tangent Lord=地平线，离题之主
+The Tangent Lord=离题之主
+Last Work of a Studious Pupil=勤学弟子的遗作
+Semiotic Deconstruction=符号解构
+
+#==============================================
+#  敌人类型名称
+#==============================================
+Skeleton Crews=骷髅船员
+Imps=小恶魔
+Imp=小恶魔
+Burstbugs=爆炸虫
+Burstbug=爆炸虫
+Wranglers=争论者
+Wrangler=争论者
+Ruminators=沉思者
+Ruminator=沉思者
+Spewers=喷吐者
+Spewer=喷吐者
+Shades=幽影
+Shade=幽影
+Mages=法师
+Mage=法师
+Glints=微光
+Glint=微光
+Apostrophes=撇号怪
+Apostrophe=撇号怪
+Rats=鼠群
+Rat=鼠
+Boars=野猪
+Boar=野猪
+Splices=接合体
+Splice=接合体
+Tangents=离题者
+Tangent=离题者
+Ravings=狂言者
+Raving=狂言者
+Raving Lord=狂言之主
+Tangent Lord=离题之主
+Splice Lord=接合之主
+
+#==============================================
+#  Horizon（地平线/离题之主）技能
+#==============================================
+Concoctions=药剂
+Concoction=药剂
+Creases=裂纹
+Crease=裂纹
+Clatters=骰响
+Dice=骰子
+Parenthetical=括号
+Chromatic Haste=多彩急速
+Chromatic Explosions=多彩爆炸
+Lingering Charge=残留充能
+Ink Motes=墨水微粒
+Celestial Eye=天界之眼
+
+#==============================================
+#  额外战斗相关
+#==============================================
+Crombul=克隆布尔
+Styxen=斯提克森
+Myriad=万象
+Obelisk=方尖碑
+Obelisks=方尖碑
+Lantern=灯笼
+Lanterns=灯笼
+Fiery Lantern=火焰灯笼
+Fissure=裂缝
+Fissures=裂缝
+Quake=地震
+Rockfall=落石
+Debris=碎石
+Bombardier=轰炸者
+Guardian=守护者
+Burstling=爆裂者
+Broodling=幼虫
+Broodlings=幼虫
+Broodling Eggs=虫卵
+Dormant=休眠的
+Empowered=强化的
+The Taking Tree=攫取之树
+Lava Furnace=熔岩炉
+Eye of the Storm=风暴之眼
