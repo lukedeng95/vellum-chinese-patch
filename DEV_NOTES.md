@@ -8,9 +8,18 @@ Vellum汉化补丁/
 ├── winhttp.dll                 # BepInEx 引导文件
 ├── doorstop_config.ini         # BepInEx 引导配置
 ├── install_chinese_patch.py    # 一键安装脚本
-├── patch_assets.py             # 资源文件二进制补丁脚本
+├── patch_assets.py             # 资源文件二进制补丁脚本 (导入所有翻译)
+├── translations_extended.py    # 扩展翻译字典 (371条)
+├── translations_batch1.py      # 批次1: #24-#197 能力效果 (59条)
+├── translations_batch2.py      # 批次2: #201-#400 技能/移动描述 (183条)
+├── translations_batch3.py      # 批次3: #401-#570 怪物/Boss基础 (167条)
+├── translations_batch4.py      # 批次4: #571-#750 Boss机制/台词 (175条)
+├── translations_batch5.py      # 批次5: #751-#900 诗歌/骰子/杂项 (143条)
+├── translations_batch6.py      # 批次6: #901-#1130 系统/UI/教程 (217条)
 ├── README.md                   # 用户说明
 ├── DEV_NOTES.md                # 本文档
+├── 使用说明.txt                # 用户使用说明
+├── 安装说明.txt                # 安装指南
 ├── .gitignore
 └── BepInEx/
     ├── config/
@@ -20,8 +29,22 @@ Vellum汉化补丁/
     │   ├── XUnity.AutoTranslator/     # 文本钩子插件
     │   └── XUnity.ResourceRedirector/ # 资源重定向插件
     └── Translation/zh-CN/Text/
-        └── _VellumChinese.txt         # 翻译文件 (~800条)
+        └── _VellumChinese.txt         # 运行时翻译文件 (~1784条)
 ```
+
+## 翻译覆盖统计
+
+| 来源 | 条数 |
+|------|------|
+| patch_assets.py 基础翻译 | 37 |
+| translations_extended.py | 371 |
+| translations_batch1~6.py | 944 |
+| **二进制补丁总计** | **1,352** |
+| _VellumChinese.txt 运行时 | 1,784 |
+| **总覆盖率** | **~92.5% (2,289/2,475)** |
+
+未翻译的 ~186 条中，23 条为开发者内部注释（如 "Base Text:"、"Controlled via code..." 等），
+其余为深层嵌入或无需翻译的内容。
 
 ## 技术架构
 
@@ -83,21 +106,19 @@ Unity 字符串序列化格式：
 
 ## 待办事项
 
-### 高优先级
-- [ ] 将截图中可见的未翻译文本加入 `patch_assets.py`
-  - `Don't get overwhelmed with adds!` 和 `Dodge damage!` 在资源中的变体
-  - 各 Boss 的 Unique 页面描述文本
-- [ ] 处理含 `<sprite>` 标记的战斗文本匹配
+### 已完成 (v4.0)
+- [x] 全部 Boss 描述与机制说明
+- [x] 全部页面效果与能力描述
+- [x] 全部怪物图鉴描述
+- [x] 全部设置项说明、教程文本
+- [x] 全部成就/挑战文本
+- [x] 全部背景故事/诗歌/台词
+- [x] 墨水机制、签名技能描述
+- [x] 含 `<sprite>` 标记的战斗文本
 
-### 中优先级
-- [ ] H6（宇宙之冕/奥蕾莉亚）的嵌入文本补丁 — 需要在提取的 JSON 中定位
-- [ ] 奇美鲁斯 (Chimaerus) 的嵌入文本补丁
-- [ ] 更多战斗场景中的提示文本
-
-### 低优先级
-- [ ] 图鉴中的怪物描述（Skeleton Crews、Imps、Wranglers 等小怪）
-- [ ] 剧情/背景文本（Lore entries）
-- [ ] 道具/技能描述文本
+### 可能的后续工作
+- [ ] 游戏版本更新后新增文本
+- [ ] 极少数开发者内部注释文本（非用户可见，低优先级）
 
 ## 配置注意事项
 
@@ -118,7 +139,9 @@ EnableDumping=False                 # 开启会导出资源（与 CacheMetadataF
 
 ## 相关文件位置（开发环境）
 
-- 游戏目录：`D:\SteamLibrary\steamapps\common\Vellum Study Hall\`
-- 补丁源码：`C:\Users\rsb\Desktop\222\Vellum汉化补丁\`
-- 提取的文本 JSON：`C:\Users\rsb\Desktop\222\vellum_text_extracted.json`
-- 攻略参考：`C:\Users\rsb\Desktop\222\魔兽世界12.0团本前瞻攻略\`
+- 游戏目录：Steam 库中的 `Vellum Study Hall/`
+- 补丁源码：本仓库
+- 辅助文件（不含在发布包中）：
+  - `still_missing.txt` — 翻译进度跟踪（已完成）
+  - `to_translate.txt` — 待翻译文本提取
+  - `untranslated_*.txt` — 未翻译文本分析

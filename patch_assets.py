@@ -152,6 +152,21 @@ try:
 except ImportError:
     pass
 
+# 导入批次翻译
+for _batch_mod, _batch_var in [
+    ('translations_batch1', 'TRANSLATIONS_BATCH1'),
+    ('translations_batch2', 'TRANSLATIONS_BATCH2'),
+    ('translations_batch3', 'TRANSLATIONS_BATCH3'),
+    ('translations_batch4', 'TRANSLATIONS_BATCH4'),
+    ('translations_batch5', 'TRANSLATIONS_BATCH5'),
+    ('translations_batch6', 'TRANSLATIONS_BATCH6'),
+]:
+    try:
+        _mod = __import__(_batch_mod)
+        TRANSLATIONS.update(getattr(_mod, _batch_var))
+    except ImportError:
+        pass
+
 
 def find_game_path():
     """尝试自动查找游戏路径"""
