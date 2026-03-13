@@ -2125,3 +2125,40 @@ Each <b>Signature Ink</b> comes with unique passives that can affect your playst
 Casting spells with <b>tinted mana</b> activates special effects.=用<b>着色法力</b>施法激活特殊效果。
 <b>Signature Abilities</b> have a <b>30s</b> cooldown and can change the course of battle!=<b>签名技能</b>有<b>30s</b>冷却，可扭转战局！
 Stay <pos>away</pos> from allies until the shield hits!=护盾命中前<pos>远离</pos>队友！
+
+#==============================================
+#  被二进制补丁跳过的条目（运行时翻译补充）
+#==============================================
+
+# 阿拉希奥姆 (Araxiom) - Boss描述
+A delicate, silken thread drifts\nlightly in the breeze. <i>Quiet steps</i>.=细腻的丝线\n在微风中轻轻飘荡。<i>悄无声息的脚步</i>。
+A silent blanket of woven tales gently peels\nfrom the cavern wall. <i>They sleep</i>.=编织故事的寂静毯幔\n从洞穴墙壁上轻轻剥落。<i>它们在沉睡</i>。
+Airily, cozily, the grey web clings\nto its newest confidant. <i>She knows</i>.=灰色的网轻柔而温暖地\n攀附着它最新的知己。<i>她知晓一切</i>。
+<i>Hush now</i>...<b>Araxiom</b> is here.=<i>安静</i>……<b>阿拉希奥姆</b>来了。
+
+# 阿拉希奥姆 - 战斗提示
+- Try to apply <pos>Lanterns</pos> generously!=- 尽量多使用<pos>灯笼</pos>！
+Try to apply <pos>Lanterns</pos> generously!=尽量多使用<pos>灯笼</pos>！
+- Araxiom cannot be harmed while Guardians live!=- 守护者活着时无法伤害阿拉希奥姆！
+Araxiom cannot be harmed while Guardians live!=守护者活着时无法伤害阿拉希奥姆！
+
+# 贝洛朗 (Bigol'Hen) - Boss描述
+Crossing the road between the Bright and the Null,\n<b>Bigol'Hen</b> oscillates between life and death. Fowl powers\nerupt from this once-tender bird.=横跨光明与虚无之间，\n<b>贝洛朗</b>在生死间徘徊。禽类之力\n从这只曾经温顺的鸟中爆发。
+It now scrambles to protect the nest against any and all\nintruders.=它如今奋力保卫巢穴，抵御所有入侵者。
+With 11 Verbs and Vices=以11种动词与恶习
+
+# 贝洛朗 - 战斗提示
+- Kill the boss... a lot=- 反复击杀BOSS…
+Kill the boss... a lot=反复击杀BOSS…
+- Deal with your matching color mechanics!=- 处理与你颜色匹配的机制！
+Deal with your matching color mechanics!=处理与你颜色匹配的机制！
+- Stay aware of your color!=- 注意你的颜色！
+Stay aware of your color!=注意你的颜色！
+
+# 其他被跳过的战斗相关条目
+$+|+|75|HP$ while held.=持有时$+|+|75|HP$。
+$+|+|5|%|DMG$ per stack.=$+|+|5|%|DMG$每层。
+Collect the widespread Ink motes!=收集散落的墨水微粒！
+$boss$ abilities gain $-|+|50|%| Size$.=$boss$技能$-|+|50|%| Size$。
+Controls how fast the camera changes speed from rapid input changes.=控制快速输入时相机速度变化。
+$ability-primary$ casts also launch a <pos>bolt</pos>.=$ability-primary$施放同时发射<pos>弹射物</pos>。
