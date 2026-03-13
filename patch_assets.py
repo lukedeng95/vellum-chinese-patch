@@ -222,8 +222,25 @@ def patch_assets(game_path):
             skipped_size += 1
             continue
 
-        # 在文件中查找英文文本
-        pos = data.find(eng_bytes)
+        # 在文件中查找英文文本（验证 Unity 字符串位置）
+        # Unity 字符串格式: [4字节长度前缀][UTF-8内容][对齐填充]
+        # 只在长度前缀匹配的位置替换，避免误替换元数据导致崩溃
+        search_start = 0
+        pos = -1
+        while True:
+            candidate = data.find(eng_bytes, search_start)
+            if candidate == -1:
+                break
+            # 验证：前4字节应该是字符串长度
+            if candidate >= 4:
+                import struct
+                length_prefix = struct.unpack('<I', data[candidate-4:candidate])[0]
+                if length_prefix == len(eng_bytes):
+                    pos = candidate
+                    break
+            # 前缀不匹配，继续搜索下一个位置
+            search_start = candidate + 1
+
         if pos == -1:
             print(f"  [未找到] {eng_text[:50]}...")
             skipped_notfound += 1
