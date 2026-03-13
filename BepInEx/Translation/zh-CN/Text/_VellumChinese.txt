@@ -881,6 +881,16 @@ During intermission, if you're targeted with an AoE, move to the edge and avoid 
 
 # 大母鸡
 You can open eggs prematurely, sapping them of strength.=你可以提前打开蛋，削弱它们。
+You are <neg>Void</neg>! Make sure to only touch other <neg>Void</neg> effects!=你是<neg>虚空</neg>属性！只接触<neg>虚空</neg>效果！
+You are <pos>Light</pos>! Make sure to only touch other <pos>Light</pos> effects!=你是<pos>圣光</pos>属性！只接触<pos>圣光</pos>效果！
+You are Void! Make sure to only touch other Void effects!=你是虚空属性！只接触虚空效果！
+You are Light! Make sure to only touch other Light effects!=你是圣光属性！只接触圣光效果！
+You are <b>Void</b>! Make sure to only touch other <b>Void</b> effects!=你是<b>虚空</b>属性！只接触<b>虚空</b>效果！
+You are <b>Light</b>! Make sure to only touch other <b>Light</b> effects!=你是<b>圣光</b>属性！只接触<b>圣光</b>效果！
+- You are <neg>Void</neg>! Make sure to only touch other <neg>Void</neg> effects!=- 你是<neg>虚空</neg>属性！只接触<neg>虚空</neg>效果！
+- You are <pos>Light</pos>! Make sure to only touch other <pos>Light</pos> effects!=- 你是<pos>圣光</pos>属性！只接触<pos>圣光</pos>效果！
+Deal with your matching color mechanics!=处理与你颜色匹配的机制！
+Stay aware of your color!=注意你的颜色！
 
 #==============================================
 #  Boss语录 & 区域名称

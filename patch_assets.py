@@ -116,6 +116,10 @@ TRANSLATIONS = {
         '<b>\u574e\u6bd4\u7eb3\u9686</b>\u4f1a\u7528\u8303\u56f4\u5708\u70b9\u540d\u4f60\u3002\u628a\u5708\u5e26\u5230\n<b>\u6c60\u5b50</b>\u65c1\uff0c\u5708\u7ed3\u675f\u65f6\u53ef\u4ee5\u6e05\u9664\u6c60\u5b50\u3002',
 
     # ---- 大母鸡比格 (Bigol'Hen) ----
+    'Crossing the road between the Bright and the Null, <b>Bigol\'Hen</b> oscillates between life and death. Fowl powers erupt from this once-tender bird.\n\nIt now scrambles to protect the nest against any and all intruders.':
+        '横跨光明与虚无之间，<b>大母鸡比格</b>在生死间徘徊。禽类之力从这只曾经温顺的鸟中爆发。\n\n它如今奋力保卫巢穴，抵御所有入侵者。',
+
+
     '<b>Bigol\'Hen</b> will make you either <pos>Light or Void</pos>. \n\nYou will need to interact with all other mechanics based on this.':
         '<b>\u5927\u6bcd\u9e21\u6bd4\u683c</b>\u4f1a\u8ba9\u4f60\u53d8\u6210<pos>\u5723\u5149\u6216\u865a\u7a7a</pos>\u5c5e\u6027\u3002\n\n\u4f60\u9700\u8981\u6839\u636e\u8fd9\u4e2a\u5c5e\u6027\u6765\u5e94\u5bf9\u6240\u6709\u5176\u4ed6\u673a\u5236\u3002',
 
