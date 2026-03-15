@@ -615,6 +615,7 @@ Kill Near A Wall!=贴墙击杀！
 Kill Near A Walll!=贴墙击杀！
 Kill it=击杀它！
 Kill it before it transforms!=在它变身前击杀它！
+Now Killable! Kill it before it transforms!=现在可击杀了！在它变身前击杀它！
 Kill the egg=击杀蛋！
 Kill the egg before the bird respawns!=在鸟重生前击杀蛋！
 
@@ -868,6 +869,29 @@ If the boss gets 3 in a row, it's a Wipe!=首领三连线就灭团！
 Play Tic-Tac-Toe with the boss!=和首领下九宫格！
 An Orb will fire soon! Get ready to SOAK it.=宝珠即将发射！准备分摊。
 DON'T SOAK!=别分摊！
+DON'T KILL the next orb until your Debuff falls off!=减益消失前别打下一个宝珠！
+Don't kill the next orb until your Debuff falls off!=减益消失前别打下一个宝珠！
+<neg>DON'T KILL</neg> the next orb until your <neg>Debuff</neg> falls off!=<neg>别打</neg>下一个宝珠，等<neg>减益</neg>消失！
+Now <pos>Killable!</pos> <b>Kill it</b> before it <neg>transforms!</neg>=现在<pos>可击杀！</pos><b>快击杀</b>，在它<neg>变身前！</neg>
+<pos>Kick</pos> (Touch) the Shade before it <neg>finishes casting</neg>!=<pos>踢</pos>（碰触）暗影，在它<neg>读条完成</neg>前！
+<pos>Destroy the Orb</pos> before it <neg>reaches</neg> the boss!=在宝珠<neg>到达</neg>首领前<pos>摧毁它</pos>！
+
+# 带富文本标签的战斗提示（游戏实际发送的版本）
+<neg>DON'T SOAK!</neg> \n\n<b>On Heroic</b> you have to <i>alternate soaks</i>.=<neg>别分摊！</neg>\n\n<b>英雄难度</b>需要<i>交替分摊</i>。
+<neg>Shade</neg> Spawned! <pos>Interrupt</pos> it!.=<neg>暗影</neg>出现了！<pos>打断</pos>它！
+<pos>Kill the Manifestation</pos> to prevent <neg>extra damage</neg>...=<pos>击杀具象</pos>以阻止<neg>额外伤害</neg>…
+<pos>Kill the Void Orbs</pos> before they do too much <neg>damage!</neg>=在虚空宝珠造成过多<neg>伤害</neg>前<pos>击杀它们</pos>！
+<pos>Kill</pos> the <neg>Adds</neg> before they reach the <neg>Boss!</neg>=在<neg>小怪</neg>到达<neg>Boss</neg>前<pos>击杀</pos>它们！
+<pos>Kill</pos> the <neg>Manifestations</neg> before they reach the <neg>Boss!</neg>=在<neg>具象</neg>到达<neg>Boss</neg>前<pos>击杀</pos>它们！
+<pos>SOAK</pos> on <sprite name="sym_bar">Tank to clear a space!=<pos>分摊</pos><sprite name="sym_bar">坦克以清出格子！
+<pos>SOAK</pos> with the <sprite name="sym_bar">Tank to get phased!=<pos>分摊</pos><sprite name="sym_bar">坦克的圈进入内场！
+<pos>Soak</pos> the <neg>Hammer</neg>, then <pos>dodge</pos> the spinning projectiles!=<pos>分摊</pos><neg>圣锤</neg>，然后<pos>躲避</pos>旋转弹射物！
+<pos>Soak</pos> the Orb to reduce its <b>size!</b>=<pos>分摊</pos>宝珠以缩小其<b>体积！</b>
+<pos>Soak</pos> the circle to save your allies!=<pos>分摊</pos>圆圈拯救队友！
+An <neg>Orb</neg> will fire soon! Get ready to <pos>SOAK</pos> it.=<neg>宝珠</neg>即将发射！准备<pos>分摊</pos>。
+Prepare to <pos>Soak</pos> an orb!=准备<pos>分摊</pos>宝珠！
+<b>Smack-O-Lantern</b> continuously summons exploding Jack-O-Lanterns to pursue Scribes. <pos>Interruptable</pos> by repeated attacks.=<b>南瓜灯</b>持续召唤爆炸南瓜追逐书记官。可通过反复攻击<pos>打断</pos>。
+
 On Heroic you have to alternate soaks=英雄难度需要交替分摊
 alternate soaks=交替分摊
 SOAK with the Tank to get phased!=分摊坦克的圈进入内场！
