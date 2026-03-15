@@ -1,3 +1,5 @@
 __pycache__/
 *.pyc
-
+add_*.py
+fix_*.py
+scan_*.py
