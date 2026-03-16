@@ -16,20 +16,63 @@ import sys
 import zipfile
 import shutil
 
+# Fix Unicode output on Windows terminals with non-UTF-8 encoding (e.g. GBK)
+if sys.stdout.encoding and sys.stdout.encoding.lower() not in ('utf-8', 'utf8'):
+    try:
+        sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+    except Exception:
+        pass
+
 def find_game():
     """Try to find the game installation directory"""
     common_paths = [
+        r"D:\Steam\steamapps\common\Vellum Study Hall",
+        r"C:\Steam\steamapps\common\Vellum Study Hall",
+        r"E:\Steam\steamapps\common\Vellum Study Hall",
+        r"F:\Steam\steamapps\common\Vellum Study Hall",
         r"A:\SteamLibrary\steamapps\common\Vellum Study Hall",
+        r"B:\SteamLibrary\steamapps\common\Vellum Study Hall",
+        r"C:\SteamLibrary\steamapps\common\Vellum Study Hall",
         r"D:\SteamLibrary\steamapps\common\Vellum Study Hall",
-        r"C:\Program Files (x86)\Steam\steamapps\common\Vellum Study Hall",
-        r"C:\Program Files\Steam\steamapps\common\Vellum Study Hall",
         r"E:\SteamLibrary\steamapps\common\Vellum Study Hall",
         r"F:\SteamLibrary\steamapps\common\Vellum Study Hall",
+        r"G:\SteamLibrary\steamapps\common\Vellum Study Hall",
+        r"C:\Program Files (x86)\Steam\steamapps\common\Vellum Study Hall",
+        r"C:\Program Files\Steam\steamapps\common\Vellum Study Hall",
+        r"D:\Games\steamapps\common\Vellum Study Hall",
+        r"E:\Games\steamapps\common\Vellum Study Hall",
     ]
     
     for path in common_paths:
         if os.path.exists(os.path.join(path, "Vellum Study Hall.exe")):
             return path
+    
+    # Try to find Steam install path from Windows registry
+    try:
+        import winreg
+        with winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE,
+                            r"SOFTWARE\WOW6432Node\Valve\Steam") as key:
+            steam_path = winreg.QueryValueEx(key, "InstallPath")[0]
+        candidate = os.path.join(steam_path, "steamapps", "common", "Vellum Study Hall")
+        if os.path.exists(os.path.join(candidate, "Vellum Study Hall.exe")):
+            return candidate
+        # Also check libraryfolders.vdf for additional library paths
+        vdf_path = os.path.join(steam_path, "steamapps", "libraryfolders.vdf")
+        if os.path.isfile(vdf_path):
+            with open(vdf_path, "r", encoding="utf-8") as vdf:
+                for line in vdf:
+                    line = line.strip()
+                    if '"path"' in line or ('"' in line and ':\\\\' in line):
+                        # Extract quoted path values
+                        parts = line.split('"')
+                        for part in parts:
+                            if len(part) > 3 and (part[1] == ':' or part.startswith('/')):
+                                candidate = os.path.join(part.replace('\\\\', '\\'),
+                                                         "steamapps", "common", "Vellum Study Hall")
+                                if os.path.exists(os.path.join(candidate, "Vellum Study Hall.exe")):
+                                    return candidate
+    except Exception:
+        pass
     
     return None
 

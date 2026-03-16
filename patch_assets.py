@@ -175,16 +175,50 @@ for _batch_mod, _batch_var in [
 def find_game_path():
     """尝试自动查找游戏路径"""
     common_paths = [
+        r"D:\Steam\steamapps\common\Vellum Study Hall",
+        r"C:\Steam\steamapps\common\Vellum Study Hall",
+        r"E:\Steam\steamapps\common\Vellum Study Hall",
+        r"F:\Steam\steamapps\common\Vellum Study Hall",
         r"A:\SteamLibrary\steamapps\common\Vellum Study Hall",
+        r"B:\SteamLibrary\steamapps\common\Vellum Study Hall",
+        r"C:\SteamLibrary\steamapps\common\Vellum Study Hall",
         r"D:\SteamLibrary\steamapps\common\Vellum Study Hall",
+        r"E:\SteamLibrary\steamapps\common\Vellum Study Hall",
+        r"F:\SteamLibrary\steamapps\common\Vellum Study Hall",
+        r"G:\SteamLibrary\steamapps\common\Vellum Study Hall",
         r"C:\Program Files (x86)\Steam\steamapps\common\Vellum Study Hall",
         r"C:\Program Files\Steam\steamapps\common\Vellum Study Hall",
-        r"E:\SteamLibrary\steamapps\common\Vellum Study Hall",
+        r"D:\Games\steamapps\common\Vellum Study Hall",
+        r"E:\Games\steamapps\common\Vellum Study Hall",
     ]
     for p in common_paths:
         assets = os.path.join(p, "Vellum Study Hall_Data", "resources.assets")
         if os.path.isfile(assets):
             return p
+    # Try Windows registry as fallback
+    try:
+        import winreg
+        with winreg.OpenKey(winreg.HKEY_LOCAL_MACHINE,
+                            r"SOFTWARE\WOW6432Node\Valve\Steam") as key:
+            steam_path = winreg.QueryValueEx(key, "InstallPath")[0]
+        candidate = os.path.join(steam_path, "steamapps", "common", "Vellum Study Hall")
+        if os.path.isfile(os.path.join(candidate, "Vellum Study Hall_Data", "resources.assets")):
+            return candidate
+        vdf_path = os.path.join(steam_path, "steamapps", "libraryfolders.vdf")
+        if os.path.isfile(vdf_path):
+            with open(vdf_path, "r", encoding="utf-8") as vdf:
+                for line in vdf:
+                    line = line.strip()
+                    if '"path"' in line:
+                        parts = line.split('"')
+                        for part in parts:
+                            if len(part) > 3 and part[1] == ':':
+                                candidate = os.path.join(part.replace('\\\\', '\\'),
+                                                         "steamapps", "common", "Vellum Study Hall")
+                                if os.path.isfile(os.path.join(candidate, "Vellum Study Hall_Data", "resources.assets")):
+                                    return candidate
+    except Exception:
+        pass
     return None
 
 
